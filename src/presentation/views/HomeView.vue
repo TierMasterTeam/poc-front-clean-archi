@@ -1,7 +1,9 @@
-<template>
-  <div>
-    <h1>Hello world !</h1>
-  </div>
-</template>
+<script setup lang="ts">
+import Item from '../components/Item.vue'
+</script>
 
-<style></style>
+<template>
+  <main>
+    <Item />
+  </main>
+</template>
