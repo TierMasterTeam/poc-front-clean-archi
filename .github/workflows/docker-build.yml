@@ -28,3 +28,10 @@ jobs:
         context: .
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/poc-front-tier-master:latest
+
+    - name: generate artifact
+      uses: actions/attest-build-provenance@v2
+      with:
+        subject-name: ${{ secrets.DOCKER_USERNAME }}/poc-front-tier-master
+        subject-digest: ${{ steps.push.outputs.digest }}
+        push-to-registry: true
