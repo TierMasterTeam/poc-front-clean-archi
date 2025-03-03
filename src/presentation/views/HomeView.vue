@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Item from '../components/Item.vue'
+import Tierlist from '../components/TierList.vue'
 </script>
 
 <template>
   <main>
-    <Item />
+    <Tierlist />
   </main>
 </template>
