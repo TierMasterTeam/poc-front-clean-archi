@@ -1,4 +1,5 @@
 /* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
   --vt-c-white: #ffffff;
@@ -61,13 +62,14 @@
 
 body {
   min-height: 100vh;
-  color: #181818;
-  background: #fff;
+  color: #F7F7F8;
+  background: #2F2D2E;
   transition:
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
   font-family:
+    'Roboto Mono',
     Inter,
     -apple-system,
     BlinkMacSystemFont,
@@ -80,7 +82,7 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
